@@ -1,0 +1,27 @@
+# Frontend .dockerignore
+# Dépendances Node (seront réinstallées dans le conteneur)
+node_modules/
+
+# Build de production
+dist/
+
+# Variables d'environnement
+.env
+.env.local
+.env.production
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cache
+.cache/
+.vite/
+
+# IDE
+.vscode/
+.idea/
+
+# Système
+.DS_Store
+Thumbs.db

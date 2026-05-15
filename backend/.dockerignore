@@ -1,0 +1,26 @@
+# Backend .dockerignore
+# Exclure les environnements virtuels Python
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Variables d'environnement sensibles
+.env
+
+# Caches et artefacts
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
