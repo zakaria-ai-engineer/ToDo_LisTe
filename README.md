@@ -108,7 +108,7 @@ To spin up the entire Full-Stack application (MongoDB, FastAPI Backend, and Reac
 
 **Service Endpoints:**
 - **Frontend UI:** `http://localhost:5173`
-- **Backend API:** `http://localhost:8000`
+- **Backend API:** ``
 - **MongoDB:** `localhost:27017`
 
 To stop the containers, use:

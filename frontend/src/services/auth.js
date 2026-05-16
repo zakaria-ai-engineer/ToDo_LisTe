@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE = 'http://localhost:8000/auth'
+const BASE = 'https://todo-199jiuq4.b4a.run/auth'
 
 export async function register(username, email, password) {
   const { data } = await axios.post(`${BASE}/register`, { username, email, password })

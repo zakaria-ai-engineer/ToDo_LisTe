@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://todo-199jiuq4.b4a.run'
 
 const api = axios.create({ baseURL: BASE_URL })
 
@@ -30,14 +30,14 @@ api.interceptors.response.use(
 )
 
 // Auth
-export const registerUser = (data)  => api.post('/register', data)
-export const loginUser    = (data)  => api.post('/login',    data)
-export const getMe        = ()      => api.get('/me')
+export const registerUser = (data) => api.post('/register', data)
+export const loginUser = (data) => api.post('/login', data)
+export const getMe = () => api.get('/me')
 
 // Tasks (protégées JWT)
-export const getTasks   = ()          => api.get('/tasks/')
-export const updateTask = (id, data)  => api.put(`/tasks/${id}`, data)
-export const deleteTask = (id)        => api.delete(`/tasks/${id}`)
+export const getTasks = () => api.get('/tasks/')
+export const updateTask = (id, data) => api.put(`/tasks/${id}`, data)
+export const deleteTask = (id) => api.delete(`/tasks/${id}`)
 
 // Chat AI (protégée JWT)
 export const sendChat = (message) => api.post('/chat/', { message })

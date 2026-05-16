@@ -6,8 +6,8 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      '/chat': 'http://localhost:8000',
-      '/tasks': 'http://localhost:8000',
+      '/chat': 'https://todo-199jiuq4.b4a.run',
+      '/tasks': 'https://todo-199jiuq4.b4a.run',
     },
   },
 })

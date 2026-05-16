@@ -59,7 +59,7 @@ services:
     networks:
       - taskbot_network
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      test: ["CMD", "curl", "-f", "https://todo-199jiuq4.b4a.run/"]
       interval: 15s
       timeout: 5s
       retries: 3
@@ -76,7 +76,7 @@ services:
       - "5173:5173"
     environment:
       # URL de l'API backend (accessible depuis le navigateur, donc localhost)
-      - VITE_API_URL=http://localhost:8000
+      - VITE_API_URL=https://todo-199jiuq4.b4a.run
     depends_on:
       backend:
         condition: service_healthy
